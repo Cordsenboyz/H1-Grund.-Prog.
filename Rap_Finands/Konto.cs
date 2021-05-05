@@ -1,17 +1,19 @@
 using System;
 using System.Collections.Generic;
-namespace Rap_Finands {
-    class Konto {
-        public string registreringsnr;
-        public string kontonr;
+namespace Rap_Finands 
+{
+    class Konto 
+    {
+        public string registreringsNr;
+        public string kontoNr;
         public string ejer;
         public List<Transaktion> transaktioner;
-        public Konto() {
+        public Konto() 
+        {
             transaktioner = new List<Transaktion>();
-            registreringsnr = Program.reginummer; //Sæt registreringsnummer på kontoen!
-            kontonr = Program.lavEtKontoNummer(); //Lav et nyt (tilfældigt shh!) kontonummer
-        }
-        
+            registreringsNr = Program.regiNummer; //Sæt registreringsnummer på kontoen!
+            kontoNr = Program.lavEtKontoNummer(); //Lav et nyt (tilfældigt shh!) kontonummer
+        }  
     }
 }
 /** 
